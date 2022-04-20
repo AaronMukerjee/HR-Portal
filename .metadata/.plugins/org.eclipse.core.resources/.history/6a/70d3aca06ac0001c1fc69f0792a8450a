@@ -1,0 +1,6 @@
+package com.hruser.main.service;
+
+@Repository
+public interface UserService {
+
+}

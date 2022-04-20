@@ -1,0 +1,5 @@
+package com.portal.main.HR.Management.config;
+
+public class CouchbaseConfig {
+
+}

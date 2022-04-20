@@ -1,0 +1,12 @@
+package com.hruser.main.service;
+
+import org.springframework.stereotype.Repository;
+
+import com.hruser.main.model.HRUser;
+
+@Repository
+public interface UserService {
+
+	public boolean signin(String userName,String OTP);
+	public HRUser signup(HRUser user);
+}

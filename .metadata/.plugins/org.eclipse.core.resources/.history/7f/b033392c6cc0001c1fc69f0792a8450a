@@ -1,0 +1,18 @@
+package com.hruser.main.service;
+
+import com.hruser.main.model.HRUser;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public boolean signIn(String userName, String OTP) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public HRUser signUp(HRUser user) {
+		return null;
+	}
+
+}

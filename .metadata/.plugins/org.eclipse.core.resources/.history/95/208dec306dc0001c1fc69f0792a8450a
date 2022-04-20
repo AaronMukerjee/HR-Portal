@@ -1,0 +1,28 @@
+package com.hruser.main.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hruser.main.model.HRUser;
+import com.hruser.main.repository.UserRepository;
+
+public class UserServiceImpl implements UserService {
+	UserRepository userRepo;
+@Autowired
+public UserServiceImpl(UserRepository userRepo) {
+	this.userRepo=userRepo;
+}
+	@Override
+	public boolean signIn(String userName, String OTP) {
+		if(userRepo.existsById(userName)) {
+			//otp validation
+			return true;
+		}
+
+	}
+
+	@Override
+	public HRUser signUp(HRUser user) {
+		return null;
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.hruser.main.service;
+
+import com.hruser.main.model.HRUser;
+import com.hruser.main.repository.UserRepository;
+
+public class UserServiceImpl implements UserService {
+public UserServiceImpl(UserRepository userRepo) {
+	
+}
+	@Override
+	public boolean signIn(String userName, String OTP) {
+		if()
+		return false;
+	}
+
+	@Override
+	public HRUser signUp(HRUser user) {
+		return null;
+	}
+
+}

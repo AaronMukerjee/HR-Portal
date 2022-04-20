@@ -1,0 +1,25 @@
+package com.hruser.main.model;
+
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+import org.springframework.data.annotation.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class HRUser {
+@Id
+private String userName;
+private String firstName;
+private String lastName;
+private String email;
+private String phoneNumber;
+}

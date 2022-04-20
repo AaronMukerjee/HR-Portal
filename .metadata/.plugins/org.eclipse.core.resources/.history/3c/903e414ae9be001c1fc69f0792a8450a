@@ -1,0 +1,13 @@
+package com.portal.main.HR.Management.config;
+
+import org.springframework.boot.CommandLineRunner;
+
+public class testInsert implements CommandLineRunner{
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		
+	}
+
+}

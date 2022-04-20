@@ -1,0 +1,22 @@
+package com.portal.main.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.DependsOn;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.portal.main.model.User;
+import com.portal.main.service.UserService;
+
+@DependsOn("userRepository")
+@RestController("/User")
+public class UserController {
+	@Autowired
+	UserService userService;
+	@RequestMapping(path="/createUser",method=RequestMethod.POST)
+	public User createUser(@RequestBody User user) {
+		return userService.createUser(user);
+	}
+}

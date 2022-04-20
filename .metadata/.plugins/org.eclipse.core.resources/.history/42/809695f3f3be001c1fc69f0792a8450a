@@ -1,0 +1,21 @@
+package com.portal.main.HR.Management.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.couchbase.core.mapping.Document;
+
+import lombok.Data;
+
+@Document
+@Data
+public class User {
+	  @Id
+	    private String userId;
+	    private String firstName;
+	    private String middleName;
+	    private String lastName;
+	    private String email;
+	    private String userName;
+	    private String password;
+
+
+}

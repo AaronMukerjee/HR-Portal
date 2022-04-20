@@ -1,0 +1,5 @@
+server.port=9000
+server.servlet.context-path=/HR
+debug = true
+spring.couchbase.bootstrap-hosts=127.0.0.1
+spring.couchbase.bucket.name=Users

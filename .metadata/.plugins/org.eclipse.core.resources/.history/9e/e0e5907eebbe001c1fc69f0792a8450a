@@ -1,0 +1,28 @@
+package com.portal.main.HR.Management.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+import com.portal.main.HR.Management.model.User;
+import com.portal.main.HR.Management.repository.UserRepository;
+
+public class testInsert implements CommandLineRunner{
+
+	@Autowired
+	UserRepository userRepo;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		User user = new User();
+		user.setEmail("test@gmail.com");
+		user.setFirstName("fname");
+		user.setMiddleName("middle");
+		user.setLastName("lastname");
+		user.setPassword("test@1234");
+		user.setUserId("usr1");
+		user.setUserName("mukeraa");
+		userRepo.save(user);
+		
+	}
+
+}

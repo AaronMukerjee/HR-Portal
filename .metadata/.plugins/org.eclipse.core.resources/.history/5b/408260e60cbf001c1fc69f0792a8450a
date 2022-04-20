@@ -1,0 +1,11 @@
+package com.portal.main.repository;
+
+import org.springframework.data.couchbase.core.query.N1qlPrimaryIndexed;
+import org.springframework.data.couchbase.repository.CouchbaseRepository;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import com.portal.main.model.User;
+
+
+public interface UserRepository extends CouchbaseRepository<User, String>{
+}

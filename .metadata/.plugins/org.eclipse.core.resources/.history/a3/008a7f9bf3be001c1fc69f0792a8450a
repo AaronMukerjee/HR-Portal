@@ -1,0 +1,16 @@
+package com.portal.main.HR.Management;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+
+@ComponentScan(basePackages = { "com.portal.main.HR.Management.repository","com.portal.main.HR.Management.service","com.portal.main.HR.Management.controller" })
+public class HrManagementApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HrManagementApplication.class, args);
+	}
+
+}

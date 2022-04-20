@@ -1,0 +1,9 @@
+package com.portal.main.HR.Management.repository;
+
+import org.springframework.data.couchbase.repository.CouchbaseRepository;
+
+import com.portal.main.HR.Management.model.Users;
+
+public interface UserRepository extends CouchbaseRepository<Users,String>{
+
+}

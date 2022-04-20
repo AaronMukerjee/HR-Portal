@@ -1,0 +1,10 @@
+package com.main.hrportal.repository;
+
+import org.springframework.data.couchbase.repository.CouchbaseRepository;
+import org.springframework.stereotype.Repository;
+
+import com.main.hrportal.model.User;
+
+@Repository("userRepository")
+public interface UserRepository extends CouchbaseRepository<User, String>{
+}

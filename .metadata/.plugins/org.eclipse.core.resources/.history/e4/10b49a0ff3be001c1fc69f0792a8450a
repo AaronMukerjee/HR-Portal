@@ -1,0 +1,20 @@
+package com.portal.main.HR.Management.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.portal.main.HR.Management.model.User;
+import com.portal.main.HR.Management.service.UserService;
+
+@RestController
+public class UserController {
+	@Autowired
+	UserService userService;
+	@RequestMapping(path="/createUser",method=RequestMethod.POST)
+	public User createUser(@RequestBody User user) {
+		return userService.createUser(user);
+	}
+}

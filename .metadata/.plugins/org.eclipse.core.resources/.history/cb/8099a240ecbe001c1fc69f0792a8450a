@@ -1,0 +1,11 @@
+package com.portal.main.HR.Management.repository;
+
+import org.springframework.data.couchbase.repository.CouchbaseRepository;
+
+import com.portal.main.HR.Management.model.User;
+
+public interface UserRepository extends CouchbaseRepository<User,String>{
+   User findByEmailLike(String firstName);
+
+
+}

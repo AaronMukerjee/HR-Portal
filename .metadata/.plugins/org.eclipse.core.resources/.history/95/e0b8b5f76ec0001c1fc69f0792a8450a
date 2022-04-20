@@ -1,0 +1,13 @@
+package com.hruser.main.service;
+
+import org.springframework.stereotype.Repository;
+
+import com.hruser.main.exceptions.UserNotFoundException;
+import com.hruser.main.model.HRUser;
+
+@Repository
+public interface UserService {
+
+	public boolean signIn(String userName,String OTP) throws UserNotFoundException;
+	public HRUser signUp(HRUser user);
+}

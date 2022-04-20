@@ -1,0 +1,23 @@
+package com.main.hrportal.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.DependsOn;
+import org.springframework.stereotype.Service;
+
+import com.portal.main.model.User;
+import com.portal.main.repository.UserRepository;
+
+@Service
+@DependsOn("userRepository")
+public class UserService {
+	UserRepository userRepo;
+	
+	@Autowired
+	public UserService(UserRepository userRepo) {
+		this.userRepo=userRepo;
+	}
+	
+	public User createUser(User u) {
+		return userRepo.save(u);
+	}
+}

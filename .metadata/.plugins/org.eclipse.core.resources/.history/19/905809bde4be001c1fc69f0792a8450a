@@ -1,0 +1,8 @@
+package com.portal.main.HR.Management.model;
+
+import org.springframework.data.couchbase.core.mapping.Document;
+
+@Document
+public class Users {
+
+}

@@ -1,0 +1,5 @@
+package com.hruser.main.repository;
+
+public class UserRepository {
+
+}

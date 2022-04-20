@@ -1,0 +1,44 @@
+package com.portal.main.HR.Management.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+
+import com.portal.main.HR.Management.model.User;
+import com.portal.main.HR.Management.repository.UserRepository;
+
+public class CmdRunner implements CommandLineRunner {
+	 @Autowired
+	    private UserRepository userRepository;
+
+
+	    @Override
+	    public void run(String... strings) throws Exception {
+
+	        User u1 = createUser("user::0001", "Perry", "Manson", "perry.mason@acme.com", "Who can we get on the case?");
+	        userRepository.save(u1);
+
+	        userRepository.save(u3);
+
+	        Optional<User> user = userRepository.findById("user::0001");
+	        System.out.println("User found = "+user.get().getFirstName());
+
+	        List<User> result = userRepository.findByEmailLike("%@acme.com");
+
+	        System.out.println( "Total of @acme.com users = "+result.size()  );
+
+	    }
+
+	    public static User createUser(String id, String firstName, String lastName,
+	                                  String email, String middleName,String userName) {
+	        User user = new User();
+	        user.setEmail(email);
+	        user.setFirstName(firstName);
+	        user.setLastName(lastName);
+	        user.setMiddleName(middleName);
+	        user.setPassword("test@1234");
+	        user.setUserId(id);
+	        user.setUserName(userName);
+	        return user;
+	    }
+
+}

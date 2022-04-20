@@ -1,0 +1,5 @@
+package com.portal.main.HR.Management.repository;
+
+public interface UserRepository {
+
+}

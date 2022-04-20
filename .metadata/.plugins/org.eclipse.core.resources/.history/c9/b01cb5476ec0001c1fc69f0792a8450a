@@ -1,0 +1,6 @@
+package com.hruser.main.constants;
+
+public class ResponseMessages {
+
+	public static final String userNotFound="User has not been found, please signup."
+}

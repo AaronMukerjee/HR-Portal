@@ -1,0 +1,30 @@
+package com.hruser.main.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class HRUser {
+	{
+		"userName":"mukeraa",
+		"firstName":"Aaron",
+		"middleName":null,
+		"lastName":"Mukerjee",
+		"email":"amukerjee97@gmail.com",
+		}
+@Id
+private String userName;
+private String firstName;
+private String middleName;
+private String lastName;
+private String email;
+private String phoneNumber;
+}

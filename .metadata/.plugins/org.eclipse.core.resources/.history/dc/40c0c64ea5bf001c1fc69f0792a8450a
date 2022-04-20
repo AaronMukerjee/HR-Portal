@@ -1,0 +1,5 @@
+server.port=9000
+server.servlet.context-path=/HR
+debug = true
+spring.couchbase.bootstrap-hosts=localhost
+spring.data.couchbase.auto-index=true

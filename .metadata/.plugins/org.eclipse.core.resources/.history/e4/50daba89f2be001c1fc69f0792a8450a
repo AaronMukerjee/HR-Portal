@@ -1,0 +1,32 @@
+package com.portal.main.HR.Management.config;
+
+\
+import org.springframework.data.couchbase.config.AbstractCouchbaseConfiguration;
+
+public class CouchbaseConfig extends AbstractCouchbaseConfiguration{
+
+	@Override
+	public String getConnectionString() {
+		// TODO Auto-generated method stub
+        return "127.0.0.1";
+	}
+
+	@Override
+	public String getUserName() {
+		// TODO Auto-generated method stub
+		return "admin";
+	}
+
+	@Override
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return "Engineer$@987";
+	}
+
+	@Override
+	public String getBucketName() {
+		// TODO Auto-generated method stub
+		return "Users";
+	}
+
+}

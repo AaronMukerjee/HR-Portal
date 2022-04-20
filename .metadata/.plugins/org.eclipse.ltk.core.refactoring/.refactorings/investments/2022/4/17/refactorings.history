@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;APIResponse.java&apos; to &apos;hrUserMicroService/src/main/java/com.hruser.main.apiresponse&apos;&#x0D;&#x0A;- Original project: &apos;investments&apos;&#x0D;&#x0A;- Destination element: &apos;hrUserMicroService/src/main/java/com.hruser.main.apiresponse&apos;&#x0D;&#x0A;- Original element: &apos;com.momentum.investments.response.APIResponse.java&apos;" description="Copy compilation unit" destination="=hrUserMicroService/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.hruser.main.apiresponse" element1="/src\/main\/java=/gradle_scope=/main=/=/gradle_used_by_scope=/main,test=/&lt;com.momentum.investments.response{APIResponse.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1650433689787" units="1" version="1.0"/>
+</session>

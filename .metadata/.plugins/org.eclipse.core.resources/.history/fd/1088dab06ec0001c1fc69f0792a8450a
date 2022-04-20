@@ -1,0 +1,31 @@
+package com.hruser.main.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hruser.main.exceptions.UserNotFoundException;
+import com.hruser.main.model.HRUser;
+import com.hruser.main.repository.UserRepository;
+import com.hruser.main.response.APIResponse;
+
+public class UserServiceImpl implements UserService {
+	UserRepository userRepo;
+@Autowired
+public UserServiceImpl(UserRepository userRepo) {
+	this.userRepo=userRepo;
+}
+	@Override
+	public APIResponse<String> signIn(String userName, String OTP) throws UserNotFoundException {
+		if(userRepo.existsById(userName)) {
+			//otp validation
+			return true;
+		}
+		throw new UserNotFoundException();
+
+	}
+
+	@Override
+	public HRUser signUp(HRUser user) {
+		return null;
+	}
+
+}

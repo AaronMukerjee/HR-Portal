@@ -1,0 +1,17 @@
+package com.portal.main.HR.Management.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.portal.main.HR.Management.model.User;
+import com.portal.main.HR.Management.repository.UserRepository;
+
+@Service
+public class UserService {
+
+	@Autowired
+	UserRepository userRepo;
+	public User createUser(User u) {
+		return userRepo.save(u);
+	}
+}

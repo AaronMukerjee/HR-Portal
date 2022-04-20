@@ -1,0 +1,20 @@
+package com.hruser.main.model;
+
+import javax.persistence.Entity;
+
+import org.springframework.data.annotation.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Entity
+public class HRUser {
+@Id
+private int userId;
+private String firstName;
+private String lastName;
+private String userName;
+private String email;
+
+}

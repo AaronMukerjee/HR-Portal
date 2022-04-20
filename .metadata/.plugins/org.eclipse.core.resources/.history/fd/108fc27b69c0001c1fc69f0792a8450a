@@ -1,0 +1,5 @@
+package com.hruser.main.model;
+
+public class User {
+
+}
